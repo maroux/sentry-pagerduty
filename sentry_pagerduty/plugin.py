@@ -30,7 +30,7 @@ class PagerdutyPlugin(Plugin):
                 params('domain_name', project))
 
     def post_process(self, group, event, is_new, is_sample, **kwargs):
-        if not self.is_configuered(group.project):
+        if not self.is_configured(group.project):
             return
 
         api_key = self.get_option('api_key', group.project)
@@ -38,5 +38,4 @@ class PagerdutyPlugin(Plugin):
         service_key = self.get_option('service_key', group.project)
 
         client = pygerduty.PagerDuty(domain_name, api_key)
-        import pdb; pdb.set_trace()
-        client.trigger(service_key, str(event))
+        client.trigger_incident(service_key, event.message)
