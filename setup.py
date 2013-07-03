@@ -18,8 +18,8 @@ setup(
     url='https://github.com/depop/sentry-pagerduty',
     description='A Sentry plugin for sending error occurences to a Pagerduty instance.',
     long_description=readme,
-    package_dir={'': 'src'},
-    packages=find_packages('src'),
+    package_dir={'': 'sentry_pagerduty'},
+    packages=find_packages('sentry_pagerduty'),
     install_requires=install_requires,
     entry_points={
         'sentry.plugins': [
