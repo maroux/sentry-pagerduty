@@ -19,7 +19,7 @@ class PagerdutyPlugin(Plugin):
     resource_links = [
         ('Source', 'https://github.com/depop/sentry-pagerduty'),
         ('Bug Tracker', 'https://github.com/depop/sentry-pagerduty/issues'),
-        ('README', 'https://github.com/depop/sentry-pagerduty/blob/master/README.md'),
+        ('README', 'https://github.com/depop/sentry-pagerduty/blob/master/README.rst'),
     ]
     project_conf_form = PagerdutyConfigForm
 
