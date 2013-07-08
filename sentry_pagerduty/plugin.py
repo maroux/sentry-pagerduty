@@ -1,14 +1,14 @@
 import sentry_pagerduty
 import pygerduty
-from sentry_pagerduty.forms import PagerdutyConfigForm
+from sentry_pagerduty.forms import PagerDutyConfigForm
 from sentry.plugins import Plugin
 
 
-class PagerdutyPlugin(Plugin):
+class PagerDutyPlugin(Plugin):
     """
     Sentry plugin to send errors stats to Pagerduty.
     """
-    author = 'Leonid Berov'
+    author = 'Depop developers'
     author_url = 'https://github.com/depop/sentry-pagerduty'
     version = sentry_pagerduty.VERSION
     description = 'Send error occurence to Pagerduty.'
@@ -21,7 +21,7 @@ class PagerdutyPlugin(Plugin):
         ('Bug Tracker', 'https://github.com/depop/sentry-pagerduty/issues'),
         ('README', 'https://github.com/depop/sentry-pagerduty/blob/master/README.rst'),
     ]
-    project_conf_form = PagerdutyConfigForm
+    project_conf_form = PagerDutyConfigForm
 
     def is_configured(self, project, **kwargs):
         params = self.get_option

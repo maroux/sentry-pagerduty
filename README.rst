@@ -1,7 +1,7 @@
 sentry-pagerduty
 ================
 
-A plugin for sentry that enables sending events on to a pagerduty instance.
+A plugin for sentry that enables sending events on to a PagerDuty instance.
 
 Install
 -------

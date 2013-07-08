@@ -5,7 +5,7 @@ sentry_statsd.forms
 from django import forms
 
 
-class PagerdutyConfigForm(forms.Form):
+class PagerDutyConfigForm(forms.Form):
     api_key = forms.CharField(
         max_length=255,
         help_text='Pagerduty API KEY'
