@@ -1,0 +1,10 @@
+# Python compiles files
+*.pyc
+*.pyo
+
+# OS X
+.DS_Store
+
+# Some editors files
+._*
+*.swp
