@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 install_requires = [
     'sentry>=5.3.3'
-    #'git+git://github.com/depop/pygerduty.git@integration_api'
+    'git+git://github.com/depop/pygerduty.git'
 ]
 
 f = open('README.md')
